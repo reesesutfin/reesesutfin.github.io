@@ -1,0 +1,10 @@
+title: Reese Sutfin
+email: reesesutfin@gmail.com
+description: Reese Sutfin's online visual art portfolio.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://reesesutfin.com" # the base hostname & protocol for your site, e.g. http://example.com
+# Build settings
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock

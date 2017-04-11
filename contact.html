@@ -1,0 +1,105 @@
+---
+layout: default
+title: "Contact"
+---
+<style>
+  table {
+  width:600px;
+
+  }
+  .lable {
+  vertical-align:top;
+  width: 180px;
+  }
+  form {margin-top: 20px;}
+  .contactFields {color: white;margin: 0px 10px 10px 20px;}
+
+  #socialMedia {
+    float:right;
+    position: absolute;
+    top:270px;
+    left:600px;
+    width:320px;
+    height: 100px;
+
+  }
+  #socialMedia img {
+    margin-top: 10px;
+  }
+  .fb-like {
+    width: 320px;
+    height: 55px;
+
+  }
+</style>
+<h1>Contact</h1>
+<form name="htmlform" method="post" action="https://formspree.io/love4arts@gmail.com">
+  <table>
+    <tr>
+      <td class="lable">
+        <label for="first_name"><p class="contactFields">First Name *</p></label>
+      </td>
+      <td>
+        <input  type="text" name="first_name" maxlength="50" size="30">
+      </td>
+    </tr>
+    <tr>
+      <td class="lable">
+        <label for="last_name"><p class="contactFields">Last Name *</p></label>
+      </td>
+      <td>
+        <input  type="text" name="last_name" maxlength="50" size="30">
+      </td>
+    </tr>
+    <tr>
+      <td class="lable">
+        <label for="email"><p class="contactFields">Email Address *</p></label>
+      </td>
+      <td>
+        <input  type="text" name="email" maxlength="80" size="30">
+      </td>
+    </tr>
+    <tr>
+      <td class="lable">
+        <label for="telephone"><p class="contactFields">Telephone Number</p></label>
+      </td>
+      <td>
+        <input  type="text" name="telephone" maxlength="30" size="30">
+      </td>
+    </tr>
+    <tr>
+      <td class="lable">
+        <label for="comments"><p class="contactFields">Comments *</p></label>
+      </td>
+      <td>
+        <textarea  name="comments" maxlength="1200" cols="50" rows="12"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      </td>
+      <td colspan="2" style="text-align:left">
+        <input type="submit" value="Submit">
+      </td>
+    </tr>
+  </table>
+</form>
+<div id="socialMedia">
+  <div class="fb-like" data-href="https://www.facebook.com/sutfinart" data-send="false" data-width="320" data-show-faces="true" data-font="tahoma" data-colorscheme="dark"></div>
+  <div class="clearR"></div>
+
+  <a href="https://www.facebook.com/sutfinart" target="_blank"><img src="/graphics/social-media/f_logo.png" width="30" height="30" title="Facebook" alt="Facebook"/></a>
+  <a href="http://www.linkedin.com/in/sutfinart" target="_blank"><img src="/graphics/social-media/Linkedin.png" width="34" height="30" title="Linkedin" alt="Linkedin"/></a>
+  <a href="https://picasaweb.google.com/114188942752912022993" target="_blank"><img src="/graphics/social-media/Picasa.png" width="30" height="30" title="Picasa" alt="Picasa"/></a>
+</div>
+
+<!--Script for facebook-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--End Facebook Script-->

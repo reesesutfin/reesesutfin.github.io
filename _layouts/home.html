@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div id="featuredContainer">
+  {% if page.slideshow %}
+    {{ content }}
+  {% else %}
+  <img src="{{page.feature-image}}" width="590" height="443" alt="{{page.feature-image-alt}}">
+  {% endif %}
+  <h2>{{page.feature-title}} - <span>{{page.feature-category}}</span></h2>
+  <p>{{page.feature-description}}</p>
+</div>
+{% include side-bar.html %}
+<div id="clear"></div>

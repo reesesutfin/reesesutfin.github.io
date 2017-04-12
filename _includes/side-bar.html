@@ -1,5 +1,7 @@
 <div class="sideBar">
-  {{ content }}
+  {% if page.title == "Fine Arts" %}
+    {{ content }}
+  {% endif %}
   <h2>Currently Featuring:</h2>
   <a href="/fine-arts/galleries/symbolism-and-story/">
     <div class="thumbnail">
